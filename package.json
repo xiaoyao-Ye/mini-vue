@@ -10,7 +10,7 @@
     "commit:origin": "git pull && git add . && git-cz && git push",
     "lint": "prettier --write \"**/*.{js,ts,json,vue,md}\"",
     "lint-staged": "lint-staged",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +19,8 @@
     "git-cz": "^4.9.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "simple-git-hooks": "^2.8.0"
+    "simple-git-hooks": "^2.8.0",
+    "vitest": "^0.28.4"
   },
   "simple-git-hooks": {
     "pre-commit": "npm run lint-staged"
